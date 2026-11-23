@@ -1,0 +1,39 @@
+{
+  "name": "taskmesh-agent-id",
+  "version": "1.0.0",
+  "description": "Taskmesh: an Agent ID gated task and reputation board on BNB Chain",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "node": "hardhat node",
+    "export-abi": "hardhat compile && ts-node scripts/export-abi.ts",
+    "local:setup": "hardhat run scripts/local-setup.ts --network localhost",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network bsc",
+    "verify:testnet": "hardhat run scripts/verify.ts --network bscTestnet",
+    "verify:mainnet": "hardhat run scripts/verify.ts --network bsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZQ051031/binance-agent-id-hackathon.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZQ051031/binance-agent-id-hackathon/issues"
+  },
+  "homepage": "https://github.com/ZQ051031/binance-agent-id-hackathon#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "5.0.2",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.6",
+    "chai": "^4.5.0",
+    "dotenv": "^18.0.10",
+    "hardhat": "^2.29.2",
+    "ts-node": "^10.9.2",
+    "typescript": "5.6"
+  }
+}
